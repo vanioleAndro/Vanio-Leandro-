@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zona do Vanio — Memes, Futebol, Motivação e Vídeos Virais. O melhor entretenimento do Brasil!">
+<meta name="keywords" content="memes, futebol, motivação, vídeos engraçados, zona do vanio, vanio leandro">
+<meta property="og:title" content="Zona do Vanio 🔥⚽😂">
+<meta property="og:description" content="Memes, Futebol, Motivação e Vídeos que vão te fazer rir até chorar!">
+<title>Zona do Vanio ⚽😂🔥 — Memes, Futebol & Motivação</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  :root {
+    --yellow: #FFD700;
+    --yellow-hot: #FFAA00;
+    --black: #000000;
+    --dark: #111111;
+    --dark2: #1a1a1a;
+    --white: #FFFFFF;
+    --gray: #888;
+    --light-gray: #222;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ===== SCROLLBAR ===== */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--dark); }
+  ::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 3px; }
+
+  /* ===== HEADER ===== */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--black);
+    border-bottom: 3px solid var(--yellow);
+    padding: 0 20px;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 12px 0;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .logo-icon {
+    font-size: 2rem;
+    animation: spin-rock 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes spin-rock {
+    0% { transform: rotate(-10deg) scale(1); }
+    100% { transform: rotate(10deg) scale(1.1); }
+  }
+
+  .logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--yellow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  .logo-sub {
+    font-size: 0.6rem;
+    color: var(--gray);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: var(--dark2);
+    border: 2px solid var(--light-gray);
+    border-radius: 50px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 400px;
+    transition: border-color 0.2s;
+  }
+
+  .search-bar:focus-within { border-color: var(--yellow); }
+
+  .search-bar input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--white);
+    padding: 10px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+  }
+
+  .search-bar input::placeholder { color: var(--gray); }
+
+  .search-bar button {
+    background: var(--yellow);
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+
+  .search-bar button:hover { background: var(--yellow-hot); }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    background: var(--dark2);
+    border-bottom: 1px solid #222;
+  }
+
+  .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-inner::-webkit-scrollbar { display: none; }
+
+  nav a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 14px 18px;
+    white-space: nowrap;
+    transition: color 0.2s, background 0.2s;
+    border-bottom: 3px solid transparent;
+  }
+
+  nav a:hover, nav a.active {
+    color: var(--yellow);
+    border-bottom-color: var(--yellow);
+    background: rgba(255,215,0,0.05);
+  }
+
+  /* ===== BREAKING TICKER ===== */
+  .ticker-wrap {
+    background: var(--yellow);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .ticker-label {
+    background: var(--black);
+    color: var(--yellow);
+    font-weight: 900;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+  }
+
+  .ticker-content {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .ticker-scroll {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* ===== MAIN LAYOUT ===== */
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 28px;
+    padding: 28px 0;
+  }
+
+  /* ===== CAROUSEL ===== */
+  .carousel-section {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--dark2);
+    margin-bottom: 32px;
+    box-shadow: 0 8px 40px rgba(255,215,0,0.15);
+  }
+
+  .carousel-track { position: relative; }
+
+  .carousel-slide {
+    display: none;
+    position: relative;
+  }
+
+  .carousel-slide.active { display: block; }
+
+  .carousel-slide img, .carousel-slide .slide-placeholder {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .slide-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  }
+
+  .slide-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.92));
+    padding: 48px 28px 24px;
+  }
+
+  .slide-tag {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 900;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .slide-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .slide-cta {
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: transform 0.15s, background 0.2s;
+  }
+
+  .slide-cta:hover { transform: scale(1.05); background: var(--yellow-hot); }
+
+  .carousel-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    pointer-events: none;
+  }
+
+  .carousel-btns button {
+    pointer-events: all;
+    background: rgba(0,0,0,0.6);
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .carousel-btns button:hover { background: var(--yellow); color: var(--black); }
+
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    background: var(--dark2);
+  }
+
+  .carousel-dots span {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--light-gray);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .carousel-dots span.active { background: var(--yellow); transform: scale(1.3); }
+
+  /* ===== SECTION HEADERS ===== */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .section-icon { font-size: 1.4rem; }
+
+  .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--yellow);
+    border-radius: 2px;
+  }
+
+  .section-see-all {
+    margin-left: auto;
+    color: var(--yellow);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid var(--yellow);
+    padding: 5px 14px;
+    border-radius: 50px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .section-see-all:hover { background: var(--yellow); color: var(--black); }
+
+  /* ===== POST CARDS ===== */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+
+  .post-card {
+    background: var(--dark2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid #1f1f1f;
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(255,215,0,0.18);
+    border-color: var(--yellow);
+  }
+
+  .post-thumb {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  }
+
+  .post-body { padding: 14px; }
+
+  .post-tag {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 0.65rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+  }
+
+  .post-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    color: var(--white);
+  }
+
+  .post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    color: var(--gray);
+  }
+
+  .post-likes { color: var(--yellow); font-weight: 700; }
+
+  .post-reactions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #2a2a2a;
+  }
+
+  .reaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: var(--gray);
+    font-size: 0.75rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.2s;
+    padding: 0;
+  }
+
+  .reaction-btn:hover { color: var(--yellow); }
+  .reaction-btn.liked { color: var(--yellow); }
+
+  /* ===== AD BANNER ===== */
+  .ad-banner {
+    background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+    border: 1px dashed #333;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    color: #444;
+    font-size: 0.75rem;
+    margin-bottom: 32px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ad-banner span { font-size: 1.5rem; }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+
+  .sidebar-card {
+    background: var(--dark2);
+    border-radius: 12px;
+    border: 1px solid #1f1f1f;
+    overflow: hidden;
+  }
+
+  .sidebar-card-header {
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 900;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .top-meme-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #1a1a1a;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .top-meme-item:last-child { border-bottom: none; }
+  .top-meme-item:hover { background: rgba(255,215,0,0.05); }
+
+  .top-meme-rank {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--yellow);
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .top-meme-emoji { font-size: 1.8rem; flex-shrink: 0; }
+
+  .top-meme-title {
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--white);
+  }
+
+  .top-meme-likes {
+    margin-left: auto;
+    font-size: 0.7rem;
+    color: var(--yellow);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ===== SEND MEME BUTTON ===== */
+  .send-meme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 900;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .send-meme-btn:hover { background: var(--yellow-hot); transform: scale(1.02); }
+
+  /* ===== CATEGORIES SIDEBAR ===== */
+  .cat-list { padding: 8px 0; }
+
+  .cat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.15s;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.82rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .cat-item:last-child { border-bottom: none; }
+  .cat-item:hover { background: rgba(255,215,0,0.05); color: var(--yellow); }
+
+  .cat-left { display: flex; align-items: center; gap: 10px; }
+  .cat-emoji { font-size: 1.1rem; }
+  .cat-name { font-weight: 600; }
+  .cat-count { font-size: 0.7rem; color: var(--gray); background: #1a1a1a; padding: 2px 8px; border-radius: 50px; }
+
+  /* ===== SURPRISE BUTTON ===== */
+  .surprise-btn {
+    background: linear-gradient(135deg, var(--yellow) 0%, var(--yellow-hot) 100%);
+    color: var(--black);
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(255,215,0,0.3);
+  }
+
+  .surprise-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(255,215,0,0.5);
+  }
+
+  .surprise-btn .spin { display: inline-block; animation: spin 2s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ===== CALL TO ACTION BANNER ===== */
+  .cta-banner {
+    background: linear-gradient(135deg, #1a1100 0%, #111 100%);
+    border: 2px solid var(--yellow);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-banner::before {
+    content: '⚽';
+    position: absolute;
+    font-size: 8rem;
+    opacity: 0.05;
+    right: -20px;
+    top: -20px;
+  }
+
+  .cta-banner h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: var(--yellow);
+    margin-bottom: 8px;
+  }
+
+  .cta-banner p { color: var(--gray); font-size: 0.85rem; margin-bottom: 16px; }
+
+  .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  .cta-btn-fb {
+    background: #1877F2;
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    transition: opacity 0.2s;
+  }
+
+  .cta-btn-fb:hover { opacity: 0.9; }
+
+  .cta-btn-tk {
+    background: #010101;
+    border: 1px solid #333;
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.2s;
+  }
+
+  .cta-btn-tk:hover { border-color: var(--yellow); }
+
+  /* ===== MODAL ===== */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .modal-overlay.open { display: flex; }
+
+  .modal-box {
+    background: var(--dark2);
+    border: 2px solid var(--yellow);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 12px; right: 16px;
+    background: none;
+    border: none;
+    color: var(--gray);
+    font-size: 1.4rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+
+  .modal-close:hover { color: var(--yellow); }
+
+  .modal-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: var(--yellow);
+    margin-bottom: 6px;
+  }
+
+  .modal-sub { color: var(--gray); font-size: 0.85rem; margin-bottom: 20px; }
+
+  .modal-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .modal-field label { font-size: 0.8rem; font-weight: 700; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .modal-field input, .modal-field select, .modal-field textarea {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+  }
+
+  .modal-field input:focus, .modal-field select:focus, .modal-field textarea:focus { border-color: var(--yellow); }
+  .modal-field select option { background: #1a1a1a; }
+
+  .modal-submit {
+    width: 100%;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 900;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.2s;
+  }
+
+  .modal-submit:hover { background: var(--yellow-hot); }
+
+  /* ===== SURPRISE MODAL ===== */
+  .surprise-content {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .surprise-emoji { font-size: 6rem; margin-bottom: 12px; animation: bounce 0.5s ease; }
+  @keyframes bounce { 0%,100%{transform:scale(1)}50%{transform:scale(1.2)} }
+
+  .surprise-meme-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--yellow);
+    margin-bottom: 8px;
+  }
+
+  .surprise-meme-desc { color: var(--gray); font-size: 0.85rem; margin-bottom: 20px; }
+
+  .surprise-next {
+    background: none;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 10px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .surprise-next:hover { background: var(--yellow); color: var(--black); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--dark2);
+    border-top: 3px solid var(--yellow);
+    padding: 48px 20px 0;
+    margin-top: 40px;
+  }
+
+  .footer-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 32px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #1f1f1f;
+  }
+
+  .footer-brand h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--yellow);
+    margin-bottom: 8px;
+  }
+
+  .footer-brand p { color: var(--gray); font-size: 0.8rem; line-height: 1.6; margin-bottom: 16px; }
+
+  .social-links { display: flex; gap: 12px; }
+
+  .social-link {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+  }
+
+  .social-link:hover { border-color: var(--yellow); color: var(--black); background: var(--yellow); }
+
+  .footer-col h4 {
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--yellow);
+    margin-bottom: 14px;
+  }
+
+  .footer-col a {
+    display: block;
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--white); }
+
+  .newsletter-form { display: flex; gap: 0; margin-top: 4px; }
+
+  .newsletter-form input {
+    flex: 1;
+    background: #111;
+    border: 1px solid #333;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 10px 14px;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    outline: none;
+  }
+
+  .newsletter-form input:focus { border-color: var(--yellow); }
+
+  .newsletter-form button {
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+
+  .newsletter-form button:hover { background: var(--yellow-hot); }
+
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-bottom p { color: var(--gray); font-size: 0.75rem; }
+  .footer-bottom a { color: var(--gray); text-decoration: none; font-size: 0.75rem; }
+  .footer-bottom a:hover { color: var(--yellow); }
+
+  /* ===== TOAST ===== */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 14px 22px;
+    border-radius: 8px;
+    z-index: 9998;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .toast.show { transform: translateY(0); opacity: 1; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .main-layout { grid-template-columns: 1fr; }
+    .posts-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .sidebar { display: grid; grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 600px) {
+    .header-top { gap: 12px; }
+    .logo-text { font-size: 1.2rem; }
+    .search-bar { max-width: 100%; order: 3; flex: 0 0 100%; }
+    .posts-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .sidebar { grid-template-columns: 1fr; }
+    .slide-title { font-size: 1.1rem; }
+    .cta-btns { flex-direction: column; align-items: center; }
+  }
+
+  /* ===== ANIMATIONS ===== */
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,215,0,0.4); }
+    50% { box-shadow: 0 0 0 10px rgba(255,215,0,0); }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="header-top">
+    <a class="logo" href="#">
+      <span class="logo-icon">⚽😂</span>
+      <div>
+        <div class="logo-text">Zona do Vanio</div>
+        <div class="logo-sub">Memes · Futebol · Motivação</div>
+      </div>
+    </a>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar memes, vídeos, futebol...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="#memes"><i class="fas fa-laugh-squint"></i> Memes</a>
+    <a href="#futebol"><i class="fas fa-futbol"></i> Futebol</a>
+    <a href="#motivacao"><i class="fas fa-fire"></i> Motivação</a>
+    <a href="#videos"><i class="fas fa-play-circle"></i> Vídeos</a>
+    <a href="#sobre"><i class="fas fa-user"></i> Sobre</a>
+  </div>
+</nav>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-wrap">
+  <div class="ticker-label">🔥 Em alta</div>
+  <div class="ticker-content">
+    <span class="ticker-scroll">
+      😂 Meme do Dia: "Quando o árbitro apita fora e o time perdeu"  &nbsp;·&nbsp;  ⚽ Vídeo viral: Golaço improvável do campeonato  &nbsp;·&nbsp;  💪 Frase motivacional: "Não desista, seu tempo está chegando!"  &nbsp;·&nbsp;  🏆 Resultado: Flamengo 3 x 1 Palmeiras  &nbsp;·&nbsp;  😭 Meme: "Segunda-feira de manhã vs sexta à tarde"  &nbsp;·&nbsp;  🔥 Novo vídeo: 10 memes que representam SUA semana!
+    </span>
+  </div>
+</div>
+
+<!-- ===== MAIN ===== -->
+<div class="container">
+  <div class="main-layout">
+
+    <!-- CONTENT -->
+    <main>
+
+      <!-- CAROUSEL -->
+      <div class="carousel-section fade-in">
+        <div class="carousel-track">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active">
+            <div class="slide-placeholder">😂</div>
+            <div class="slide-overlay">
+              <span class="slide-tag">🔥 Meme Viral</span>
+              <div class="slide-title">Quando você diz "só mais um episódio" e são 3h da manhã 😂</div>
+              <button class="slide-cta" onclick="showToast('Abrindo meme viral! 😂')">Ver Meme Completo</button>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="slide-placeholder">⚽</div>
+            <div class="slide-overlay">
+              <span class="slide-tag">⚽ Futebol</span>
+              <div class="slide-title">O golaço que deixou todo mundo de boca aberta — assista agora! 🏆</div>
+              <button class="slide-cta" onclick="showToast('Carregando vídeo! ⚽')">Assistir Agora</button>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="slide-placeholder">💪</div>
+            <div class="slide-overlay">
+              <span class="slide-tag">💪 Motivação</span>
+              <div class="slide-title">Você nasceu pra vencer! 5 frases que vão mudar sua semana 🔥</div>
+              <button class="slide-cta" onclick="showToast('Abrindo conteúdo motivacional! 💪')">Me Motivar</button>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-slide">
+            <div class="slide-placeholder">🤣</div>
+            <div class="slide-overlay">
+              <span class="slide-tag">📱 TikTok Viral</span>
+              <div class="slide-title">O vídeo mais engraçado da semana — 2 milhões de visualizações! 🤣</div>
+              <button class="slide-cta" onclick="showToast('Carregando vídeo viral! 🤣')">Ver Vídeo</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-btns">
+          <button onclick="changeSlide(-1)">&#8249;</button>
+          <button onclick="changeSlide(1)">&#8250;</button>
+        </div>
+        <div class="carousel-dots">
+          <span class="active" onclick="goToSlide(0)"></span>
+          <span onclick="goToSlide(1)"></span>
+          <span onclick="goToSlide(2)"></span>
+          <span onclick="goToSlide(3)"></span>
+        </div>
+      </div>
+
+      <!-- BOTÃO SURPRESA -->
+      <button class="surprise-btn pulse" onclick="openSurprise()">
+        <span class="spin">🎲</span> SURPRESA! Mostre um meme aleatório
+      </button>
+
+      <!-- CTA BANNER -->
+      <div class="cta-banner" style="margin-top:28px;">
+        <h3>🔥 Não perca nosso conteúdo viral!</h3>
+        <p>Siga a Zona do Vanio e receba os melhores memes e vídeos direto no seu feed</p>
+        <div class="cta-btns">
+          <button class="cta-btn-fb" onclick="showToast('Curtindo no Facebook! 👍')"><i class="fab fa-facebook-f"></i> Curtir no Facebook</button>
+          <button class="cta-btn-tk" onclick="showToast('Seguindo no TikTok! 🎵')"><i class="fab fa-tiktok"></i> Seguir no TikTok</button>
+        </div>
+      </div>
+
+      <!-- AD BANNER -->
+      <div class="ad-banner">
+        <span>📢</span>
+        <strong style="color:#555">Espaço para Anúncio — Google AdSense</strong>
+        <span style="font-size:0.7rem;color:#333">728 × 90</span>
+      </div>
+
+      <!-- MEMES SECTION -->
+      <div id="memes" class="fade-in">
+        <div class="section-header">
+          <span class="section-icon">😂</span>
+          <span class="section-title">Memes Engraçados</span>
+          <a href="#" class="section-see-all">Ver todos</a>
+        </div>
+        <div class="posts-grid">
+          <div class="post-card" onclick="showToast('Abrindo meme! 😂')">
+            <div class="post-thumb">😂</div>
+            <div class="post-body">
+              <span class="post-tag">Meme</span>
+              <div class="post-title">Quando você chega em casa depois do trabalho e a mamãe fez comida boa 😭❤️</div>
+              <div class="post-meta">
+                <span>há 2 horas</span>
+                <span class="post-likes">❤️ 4.2k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Abrindo no TikTok! 🎵')"><i class="fab fa-tiktok"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Abrindo meme! 🤣')">
+            <div class="post-thumb">🤣</div>
+            <div class="post-body">
+              <span class="post-tag">Meme</span>
+              <div class="post-title">Eu na academia na primeira semana de janeiro vs dia 5 de janeiro 💀</div>
+              <div class="post-meta">
+                <span>há 5 horas</span>
+                <span class="post-likes">❤️ 8.7k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Copiado! 🔗')"><i class="fas fa-link"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Meme clássico! 😂')">
+            <div class="post-thumb">😅</div>
+            <div class="post-body">
+              <span class="post-tag">Meme</span>
+              <div class="post-title">Segunda-feira de manhã todo mundo vira zumbi. Comprovado pela ciência 🧟</div>
+              <div class="post-meta">
+                <span>há 1 dia</span>
+                <span class="post-likes">❤️ 12.1k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Copiado! 🔗')"><i class="fas fa-link"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FUTEBOL SECTION -->
+      <div id="futebol" class="fade-in">
+        <div class="section-header">
+          <span class="section-icon">⚽</span>
+          <span class="section-title">Futebol</span>
+          <a href="#" class="section-see-all">Ver todos</a>
+        </div>
+        <div class="posts-grid">
+          <div class="post-card" onclick="showToast('Abrindo post de futebol! ⚽')">
+            <div class="post-thumb">⚽</div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#1877F2;color:white">Futebol</span>
+              <div class="post-title">Top 5 golaços da rodada que deixaram a galera enlouquecida no estádio 🏟️</div>
+              <div class="post-meta">
+                <span>há 3 horas</span>
+                <span class="post-likes">❤️ 6.5k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Meme de futebol! 😂')">
+            <div class="post-thumb">🏆</div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#1877F2;color:white">Futebol</span>
+              <div class="post-title">A cara do torcedor quando o VAR anula o gol no último minuto 😭⚽</div>
+              <div class="post-meta">
+                <span>há 6 horas</span>
+                <span class="post-likes">❤️ 9.3k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Notícia quente! 🔥')">
+            <div class="post-thumb">🥅</div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#1877F2;color:white">Futebol</span>
+              <div class="post-title">Resultado da rodada: quem ganhou, quem perdeu e quem saiu com vergonha 👀</div>
+              <div class="post-meta">
+                <span>há 8 horas</span>
+                <span class="post-likes">❤️ 3.8k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AD BANNER 2 -->
+      <div class="ad-banner">
+        <span>📢</span>
+        <strong style="color:#555">Espaço para Anúncio — Google AdSense</strong>
+        <span style="font-size:0.7rem;color:#333">300 × 250</span>
+      </div>
+
+      <!-- MOTIVAÇÃO SECTION -->
+      <div id="motivacao" class="fade-in">
+        <div class="section-header">
+          <span class="section-icon">💪</span>
+          <span class="section-title">Motivação</span>
+          <a href="#" class="section-see-all">Ver todos</a>
+        </div>
+        <div class="posts-grid">
+          <div class="post-card" onclick="showToast('Bora lá! 💪')">
+            <div class="post-thumb">💪</div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#e63946;color:white">Motivação</span>
+              <div class="post-title">Sua jornada começa com um passo. Não importa o tamanho — apenas comece! 🚀</div>
+              <div class="post-meta">
+                <span>há 4 horas</span>
+                <span class="post-likes">❤️ 15.2k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Força total! 🔥')">
+            <div class="post-thumb">🔥</div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#e63946;color:white">Motivação</span>
+              <div class="post-title">Enquanto você dorme, alguém está treinando. A escolha é sua — até quando? 💎</div>
+              <div class="post-meta">
+                <span>há 1 dia</span>
+                <span class="post-likes">❤️ 22.8k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Isso aí! ✨')">
+            <div class="post-thumb">⭐</div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#e63946;color:white">Motivação</span>
+              <div class="post-title">5 hábitos que os campeões têm em comum. O número 3 vai te surpreender! 🏆</div>
+              <div class="post-meta">
+                <span>há 2 dias</span>
+                <span class="post-likes">❤️ 18.4k</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VÍDEOS SECTION -->
+      <div id="videos" class="fade-in">
+        <div class="section-header">
+          <span class="section-icon">🎬</span>
+          <span class="section-title">Vídeos Curiosos</span>
+          <a href="#" class="section-see-all">Ver todos</a>
+        </div>
+        <div class="posts-grid">
+          <div class="post-card" onclick="showToast('Abrindo vídeo! 🎬')">
+            <div class="post-thumb" style="position:relative">🎬<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.8);color:white;font-size:0.7rem;padding:2px 8px;border-radius:4px;font-family:Poppins">▶ 0:45</span></div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#6c63ff;color:white">Vídeo</span>
+              <div class="post-title">Cachorro aprende a fingir que está doente para não ir ao veterinário 💀😂</div>
+              <div class="post-meta">
+                <span>há 30 min</span>
+                <span class="post-likes">👁️ 1.2M</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-tiktok"></i> TikTok</button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Assistindo vídeo! 👀')">
+            <div class="post-thumb" style="position:relative">🐦<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.8);color:white;font-size:0.7rem;padding:2px 8px;border-radius:4px;font-family:Poppins">▶ 1:20</span></div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#6c63ff;color:white">Vídeo</span>
+              <div class="post-title">Papagaio imita todo mundo na família e não faz jus a nenhum 🤦😂🐦</div>
+              <div class="post-meta">
+                <span>há 2 horas</span>
+                <span class="post-likes">👁️ 890K</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-tiktok"></i> TikTok</button>
+              </div>
+            </div>
+          </div>
+          <div class="post-card" onclick="showToast('Que incrível! 🤩')">
+            <div class="post-thumb" style="position:relative">🎵<span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.8);color:white;font-size:0.7rem;padding:2px 8px;border-radius:4px;font-family:Poppins">▶ 2:10</span></div>
+            <div class="post-body">
+              <span class="post-tag" style="background:#6c63ff;color:white">Vídeo</span>
+              <div class="post-title">Criança de 5 anos canta melhor que artista famoso — veja a reação do pai! 🎤</div>
+              <div class="post-meta">
+                <span>há 4 horas</span>
+                <span class="post-likes">👁️ 2.3M</span>
+              </div>
+              <div class="post-reactions">
+                <button class="reaction-btn" onclick="event.stopPropagation();likePost(this)"><i class="fas fa-heart"></i> Curtir</button>
+                <button class="reaction-btn" onclick="event.stopPropagation();showToast('Compartilhado! 📤')"><i class="fab fa-tiktok"></i> TikTok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- TOP MEMES -->
+      <div class="sidebar-card">
+        <div class="sidebar-card-header">🏆 Top Memes da Semana</div>
+        <div class="top-meme-item" onclick="showToast('Abrindo meme #1! 🥇')">
+          <div class="top-meme-rank">1</div>
+          <div class="top-meme-emoji">😭</div>
+          <div class="top-meme-title">Quando a ex começa a aparecer no Instagram de todo mundo</div>
+          <div class="top-meme-likes">❤️ 32k</div>
+        </div>
+        <div class="top-meme-item" onclick="showToast('Abrindo meme #2! 🥈')">
+          <div class="top-meme-rank">2</div>
+          <div class="top-meme-emoji">😂</div>
+          <div class="top-meme-title">Eu às 23h59 prometendo acordar cedo</div>
+          <div class="top-meme-likes">❤️ 28k</div>
+        </div>
+        <div class="top-meme-item" onclick="showToast('Abrindo meme #3! 🥉')">
+          <div class="top-meme-rank">3</div>
+          <div class="top-meme-emoji">⚽</div>
+          <div class="top-meme-title">O VAR quando o seu time marca no último minuto</div>
+          <div class="top-meme-likes">❤️ 24k</div>
+        </div>
+        <div class="top-meme-item" onclick="showToast('Abrindo meme #4! 🎖️')">
+          <div class="top-meme-rank">4</div>
+          <div class="top-meme-emoji">🤦</div>
+          <div class="top-meme-title">Minha produtividade na segunda-feira</div>
+          <div class="top-meme-likes">❤️ 19k</div>
+        </div>
+        <div class="top-meme-item" onclick="showToast('Abrindo meme #5! 🎗️')">
+          <div class="top-meme-rank">5</div>
+          <div class="top-meme-emoji">💪</div>
+          <div class="top-meme-title">Eu depois de uma semana na academia</div>
+          <div class="top-meme-likes">❤️ 15k</div>
+        </div>
+      </div>
+
+      <!-- ENVIAR MEME -->
+      <div class="sidebar-card">
+        <div class="sidebar-card-header">📤 Envie seu Meme</div>
+        <div style="padding:16px;">
+          <p style="color:var(--gray);font-size:0.78rem;margin-bottom:12px;line-height:1.5">Tem um meme incrível? Manda pra gente publicar na Zona do Vanio! 🔥</p>
+          <button class="send-meme-btn" onclick="openModal()">
+            <i class="fas fa-upload"></i> Enviar Meu Meme / Vídeo
+          </button>
+        </div>
+      </div>
+
+      <!-- CATEGORIAS -->
+      <div class="sidebar-card">
+        <div class="sidebar-card-header">📂 Categorias</div>
+        <div class="cat-list">
+          <a class="cat-item" href="#memes">
+            <div class="cat-left"><span class="cat-emoji">😂</span><span class="cat-name">Memes Engraçados</span></div>
+            <span class="cat-count">1.2k</span>
+          </a>
+          <a class="cat-item" href="#futebol">
+            <div class="cat-left"><span class="cat-emoji">⚽</span><span class="cat-name">Futebol</span></div>
+            <span class="cat-count">847</span>
+          </a>
+          <a class="cat-item" href="#motivacao">
+            <div class="cat-left"><span class="cat-emoji">💪</span><span class="cat-name">Motivação</span></div>
+            <span class="cat-count">523</span>
+          </a>
+          <a class="cat-item" href="#videos">
+            <div class="cat-left"><span class="cat-emoji">🎬</span><span class="cat-name">Vídeos Curiosos</span></div>
+            <span class="cat-count">394</span>
+          </a>
+          <a class="cat-item" href="#">
+            <div class="cat-left"><span class="cat-emoji">🐕</span><span class="cat-name">Animais Fofos</span></div>
+            <span class="cat-count">267</span>
+          </a>
+          <a class="cat-item" href="#">
+            <div class="cat-left"><span class="cat-emoji">🎮</span><span class="cat-name">Games</span></div>
+            <span class="cat-count">189</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- AD SIDEBAR -->
+      <div class="ad-banner" style="border-radius:12px">
+        <span>📢</span>
+        <strong style="color:#555">Anúncio AdSense</strong>
+        <span style="font-size:0.7rem;color:#333">300 × 250</span>
+      </div>
+
+      <!-- SOBRE -->
+      <div class="sidebar-card" id="sobre">
+        <div class="sidebar-card-header">👤 Sobre o Vanio</div>
+        <div style="padding:16px;text-align:center;">
+          <div style="font-size:4rem;margin-bottom:8px">😎</div>
+          <div style="font-weight:800;font-size:1rem;color:var(--yellow);margin-bottom:4px">Vanio Leandro</div>
+          <div style="color:var(--gray);font-size:0.78rem;line-height:1.5;margin-bottom:14px">Criador de conteúdo apaixonado por memes, futebol e motivação. Aqui é o lugar pra rir e se inspirar! 🔥</div>
+          <div style="display:flex;gap:8px;justify-content:center;">
+            <a class="social-link" href="#" onclick="showToast('Indo pro Facebook! 👍')"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-link" href="#" onclick="showToast('Indo pro TikTok! 🎵')"><i class="fab fa-tiktok"></i></a>
+            <a class="social-link" href="#" onclick="showToast('Indo pro Instagram! 📸')"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>⚽😂 Zona do Vanio</h3>
+      <p>O destino número 1 para memes, futebol, vídeos engraçados e motivação diária. Feito com ❤️ por Vanio Leandro para fazer você rir e se inspirar todo dia!</p>
+      <div class="social-links">
+        <a class="social-link" href="#" onclick="showToast('Indo pro Facebook! 👍')"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-link" href="#" onclick="showToast('Indo pro TikTok! 🎵')"><i class="fab fa-tiktok"></i></a>
+        <a class="social-link" href="#" onclick="showToast('Indo pro Instagram! 📸')"><i class="fab fa-instagram"></i></a>
+        <a class="social-link" href="#" onclick="showToast('Indo pro YouTube! 🎬')"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Links Rápidos</h4>
+      <a href="#">🏠 Home</a>
+      <a href="#memes">😂 Memes</a>
+      <a href="#futebol">⚽ Futebol</a>
+      <a href="#motivacao">💪 Motivação</a>
+      <a href="#videos">🎬 Vídeos</a>
+    </div>
+    <div class="footer-col">
+      <h4>Institucional</h4>
+      <a href="#sobre">👤 Sobre</a>
+      <a href="#" onclick="showToast('Em breve! 📬')">📬 Contato</a>
+      <a href="#" onclick="showToast('Em breve! 📄')">📄 Política de Privacidade</a>
+      <a href="#" onclick="showToast('Em breve! 📋')">📋 Termos de Uso</a>
+      <a href="#" onclick="openModal()">📤 Enviar Meme</a>
+    </div>
+    <div class="footer-col">
+      <h4>📧 Receba Memes Diários!</h4>
+      <p style="color:var(--gray);font-size:0.78rem;margin-bottom:10px;line-height:1.5">Entre para a lista VIP e receba os melhores memes direto no seu email todo dia! 🔥</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="seu@email.com">
+        <button onclick="showToast('Inscrito! 🎉 Memes chegando no seu email!')">Entrar</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Zona do Vanio · Criado por Vanio Leandro · Todos os direitos reservados</p>
+    <div style="display:flex;gap:16px;">
+      <a href="#">Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MODAL ENVIO ===== -->
+<div class="modal-overlay" id="sendModal" onclick="closeModalOutside(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div class="modal-title">📤 Envie seu Meme!</div>
+    <div class="modal-sub">Manda o seu conteúdo e pode aparecer na Zona do Vanio 🔥</div>
+    <div class="modal-field">
+      <label>Seu Nome</label>
+      <input type="text" placeholder="Como você quer ser chamado?">
+    </div>
+    <div class="modal-field">
+      <label>Categoria</label>
+      <select>
+        <option>😂 Meme Engraçado</option>
+        <option>⚽ Futebol</option>
+        <option>💪 Motivação</option>
+        <option>🎬 Vídeo Curioso</option>
+        <option>🐕 Animal Fofo</option>
+      </select>
+    </div>
+    <div class="modal-field">
+      <label>Link do Meme ou Vídeo</label>
+      <input type="url" placeholder="https://...">
+    </div>
+    <div class="modal-field">
+      <label>Descrição (opcional)</label>
+      <textarea rows="3" placeholder="Conte um pouco sobre o meme..."></textarea>
+    </div>
+    <button class="modal-submit" onclick="showToast('Meme enviado! Em breve na Zona do Vanio 🔥'); closeModal()">🚀 Enviar Agora</button>
+  </div>
+</div>
+
+<!-- ===== MODAL SURPRESA ===== -->
+<div class="modal-overlay" id="surpriseModal" onclick="closeSurpriseOutside(event)">
+  <div class="modal-box" style="text-align:center;max-width:400px">
+    <button class="modal-close" onclick="closeSurprise()">×</button>
+    <div class="surprise-content">
+      <div class="surprise-emoji" id="surpriseEmoji">😂</div>
+      <div class="surprise-meme-title" id="surpriseTitle">Carregando meme...</div>
+      <div class="surprise-meme-desc" id="surpriseDesc">...</div>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <button class="surprise-next" onclick="loadSurprise()">🎲 Outro meme!</button>
+        <button class="surprise-next" onclick="showToast('Compartilhado! 📤');closeSurprise()" style="border-color:#1877F2;color:#1877F2"><i class="fab fa-facebook-f"></i> Compartilhar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast">
+  <span id="toastMsg">Mensagem</span>
+</div>
+
+<script>
+  // ===== CAROUSEL =====
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dots span');
+  let autoSlide = setInterval(() => changeSlide(1), 5000);
+
+  function goToSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = n;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    resetAutoSlide();
+  }
+
+  function changeSlide(dir) {
+    let next = (currentSlide + dir + slides.length) % slides.length;
+    goToSlide(next);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => changeSlide(1), 5000);
+  }
+
+  // ===== TOAST =====
+  let toastTimer;
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    document.getElementById('toastMsg').textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 3000);
+  }
+
+  // ===== MODAL =====
+  function openModal() {
+    document.getElementById('sendModal').classList.add('open');
+  }
+  function closeModal() {
+    document.getElementById('sendModal').classList.remove('open');
+  }
+  function closeModalOutside(e) {
+    if (e.target.id === 'sendModal') closeModal();
+  }
+
+  // ===== SURPRISE =====
+  const surprises = [
+    { emoji: '😂', title: 'Clássico eterno!', desc: 'Quando você diz que vai dormir cedo e são 3h da manhã scrollando o feed.' },
+    { emoji: '⚽', title: 'VAR de novo né?!', desc: 'O VAR anula o gol do seu time no minuto 90. Isso é crime contra a humanidade.' },
+    { emoji: '🤣', title: 'Toda segunda-feira...', desc: 'Segunda-feira de manhã: meu corpo vs meu espírito. 0 a 0 sem nenhum sinal de vida.' },
+    { emoji: '😅', title: 'Academia em janeiro', desc: 'Dia 1 de janeiro: academia lotada. Dia 7: só os veteranos sobreviveram.' },
+    { emoji: '💀', title: 'Promoção do RH', desc: 'Entrei pra trabalhar 8h e saí às 19h. "Isso é dedicação!" Não, é sobrevivência.' },
+    { emoji: '🤦', title: 'Minha conta bancária', desc: 'Eu depois de ver o extrato do cartão de crédito: *modo zumbi ativado*' },
+    { emoji: '😭', title: 'A saudade dói', desc: 'Quando você acha um lanche no fundo do armário que esqueceu. É amor verdadeiro.' },
+    { emoji: '🔥', title: 'Fé inabalável!', desc: 'Meu time perdeu 3 jogos seguidos. Não importa, na próxima rodada é nós!' },
+  ];
+
+  function openSurprise() {
+    document.getElementById('surpriseModal').classList.add('open');
+    loadSurprise();
+  }
+
+  function loadSurprise() {
+    const s = surprises[Math.floor(Math.random() * surprises.length)];
+    const emojiEl = document.getElementById('surpriseEmoji');
+    emojiEl.style.animation = 'none';
+    emojiEl.offsetHeight;
+    emojiEl.style.animation = 'bounce 0.5s ease';
+    emojiEl.textContent = s.emoji;
+    document.getElementById('surpriseTitle').textContent = s.title;
+    document.getElementById('surpriseDesc').textContent = s.desc;
+  }
+
+  function closeSurprise() {
+    document.getElementById('surpriseModal').classList.remove('open');
+  }
+
+  function closeSurpriseOutside(e) {
+    if (e.target.id === 'surpriseModal') closeSurprise();
+  }
+
+  // ===== LIKE =====
+  function likePost(btn) {
+    btn.classList.toggle('liked');
+    if (btn.classList.contains('liked')) {
+      btn.innerHTML = '<i class="fas fa-heart"></i> Curtido!';
+      showToast('Curtido! ❤️');
+    } else {
+      btn.innerHTML = '<i class="fas fa-heart"></i> Curtir';
+    }
+  }
+
+  // ===== SMOOTH NAV =====
+  document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', function() {
+      document.querySelectorAll('nav a').forEach(x => x.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
